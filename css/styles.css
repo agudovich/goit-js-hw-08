@@ -1,0 +1,88 @@
+/* reset defaults */
+/* Общий сброс отступов и паддингов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Сброс списка */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Сброс стилей инпутов и кнопок */
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Сброс заголовков */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/* Браузерные фокусы */
+input:focus,
+button:focus {
+  outline: none;
+}
+
+/* а тут поехали наши стили */
+
+.section-gallery {
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1128px;
+  padding: 0;
+  margin: 0;
+}
+
+.gallery-item {
+  width: 360px;
+  height: 200px;
+}
+
+.gallery-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-link:hover .gallery-image {
+  transform: scale(1.044);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* лайтбокс бэк по макету */
+
+body .basicLightbox {
+  background: rgba(46, 47, 66, 0.8);
+}
